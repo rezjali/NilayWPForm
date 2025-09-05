@@ -1,0 +1,212 @@
+/**
+ * Nilay Form Builder - Frontend Stylesheet
+ * Version: 1.2.0
+ */
+
+:root {
+    --nfb-primary-color: #0073e6;
+    --nfb-primary-hover-color: #005bb5;
+    --nfb-text-color: #333;
+    --nfb-border-color: #dce1e6;
+    --nfb-bg-color: #ffffff;
+    --nfb-border-radius: 8px;
+    --nfb-button-border-radius: 5px;
+    --nfb-font-family: inherit;
+    --nfb-alert-success-bg: #e6f7ed;
+    --nfb-alert-success-text: #1d643b;
+    --nfb-alert-error-bg: #fdecea;
+    --nfb-alert-error-text: #a94442;
+}
+
+.nfb-form-container {
+    direction: rtl;
+    text-align: right;
+    font-family: var(--nfb-font-family);
+    color: var(--nfb-text-color);
+    background-color: var(--nfb-bg-color);
+    padding: 30px;
+    border: 1px solid var(--nfb-border-color);
+    border-radius: var(--nfb-border-radius);
+    max-width: 700px;
+    margin: 20px auto;
+    box-sizing: border-box;
+}
+
+.nfb-form {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 0 20px;
+}
+
+.nfb-form-group {
+    margin-bottom: 25px;
+    flex-grow: 1;
+}
+
+.nfb-field-col-full {
+    width: 100%;
+}
+
+.nfb-field-col-half {
+    width: calc(50% - 10px);
+}
+
+@media (max-width: 600px) {
+    .nfb-field-col-half {
+        width: 100%;
+    }
+}
+
+.nfb-form-group label {
+    display: block;
+    font-weight: 600;
+    margin-bottom: 8px;
+}
+
+.nfb-form-group input[type="text"],
+.nfb-form-group input[type="email"],
+.nfb-form-group input[type="number"],
+.nfb-form-group input[type="url"],
+.nfb-form-group select,
+.nfb-form-group textarea {
+    width: 100%;
+    padding: 12px 15px;
+    border: 1px solid var(--nfb-border-color);
+    border-radius: var(--nfb-button-border-radius);
+    box-sizing: border-box;
+    background-color: #fdfdfd;
+    color: var(--nfb-text-color);
+    transition: border-color 0.3s, box-shadow 0.3s;
+}
+
+.nfb-form-group input:focus,
+.nfb-form-group select:focus,
+.nfb-form-group textarea:focus {
+    border-color: var(--nfb-primary-color);
+    box-shadow: 0 0 0 2px rgba(0, 115, 230, 0.2);
+    outline: none;
+}
+
+.nfb-checkbox-group label,
+.nfb-radio-group label {
+    display: block;
+    margin-bottom: 8px;
+    font-weight: normal;
+}
+
+.nfb-required {
+    color: #d9534f;
+    font-weight: bold;
+    margin-right: 2px;
+}
+
+.nfb-help-text {
+    font-size: 0.85em;
+    color: #666;
+    margin-top: 5px;
+}
+
+.nfb-submit-group {
+    width: 100%;
+    margin-top: 10px;
+    text-align: left;
+}
+
+.nfb-button {
+    display: inline-block;
+    padding: 12px 25px;
+    font-size: 1em;
+    font-weight: 600;
+    color: #ffffff;
+    background-color: var(--nfb-primary-color);
+    border: none;
+    border-radius: var(--nfb-button-border-radius);
+    cursor: pointer;
+    text-decoration: none;
+    transition: background-color 0.3s ease, transform 0.2s ease;
+}
+
+.nfb-button:hover {
+    background-color: var(--nfb-primary-hover-color);
+    transform: translateY(-2px);
+}
+
+.nfb-alert {
+    padding: 15px 20px;
+    margin-bottom: 20px;
+    border: 1px solid transparent;
+    border-radius: var(--nfb-border-radius);
+}
+
+.nfb-alert-success {
+    color: var(--nfb-alert-success-text);
+    background-color: var(--nfb-alert-success-bg);
+    border-color: #c3e6cb;
+}
+
+.nfb-alert-success a.nfb-button {
+    margin-top: 15px;
+}
+
+.nfb-alert-error {
+    color: var(--nfb-alert-error-text);
+    background-color: var(--nfb-alert-error-bg);
+    border-color: #f5c6cb;
+}
+
+.nfb-steps-container {
+    width: 100%;
+}
+
+.nfb-step {
+    display: none;
+    flex-wrap: wrap;
+    gap: 0 20px;
+}
+
+.nfb-step.active {
+    display: flex;
+}
+
+.nfb-step-nav {
+    width: 100%;
+    margin-top: 15px;
+    padding-top: 15px;
+    border-top: 1px dashed var(--nfb-border-color);
+    display: flex;
+    justify-content: space-between;
+}
+
+.nfb-prev-step {
+    background-color: #6c757d;
+}
+
+.nfb-prev-step:hover {
+    background-color: #5a6268;
+}
+
+.nfb-signature-wrapper {
+    position: relative;
+    border: 1px solid var(--nfb-border-color);
+    border-radius: var(--nfb-button-border-radius);
+    background: #fdfdfd;
+}
+
+.nfb-signature-canvas {
+    width: 100%;
+    height: 200px;
+    cursor: crosshair;
+    display: block;
+}
+
+.nfb-signature-clear {
+    position: absolute;
+    top: 5px;
+    left: 5px;
+    font-size: 0.8em;
+    text-decoration: none;
+    color: #a00;
+    background: rgba(255, 255, 255, 0.7);
+    padding: 2px 5px;
+    border-radius: 3px;
+}

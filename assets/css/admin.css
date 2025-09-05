@@ -1,0 +1,199 @@
+/**
+ * Nilay Form Builder - Admin Stylesheet
+ * Version: 1.2.0
+ */
+
+/* --- General & Tabs --- */
+.nfb-settings-tabs-wrapper,
+.nfb-entries-tabs-wrapper {
+    margin: -12px;
+}
+
+.nfb-tabs-nav,
+.nav-tab-wrapper {
+    display: flex;
+    border-bottom: 1px solid #c3c4c7;
+    background-color: #f6f7f7;
+    margin: 0;
+    padding: 0 10px;
+}
+
+.nfb-tabs-nav li {
+    margin: 0;
+    padding: 0;
+    list-style: none;
+}
+
+.nfb-tabs-nav li a,
+.nav-tab-wrapper a.nav-tab {
+    display: block;
+    padding: 10px 15px;
+    text-decoration: none;
+    color: #50575e;
+    border-bottom: 3px solid transparent;
+    margin-bottom: -1px;
+    font-weight: 600;
+}
+
+.nfb-tabs-nav li.active a,
+.nav-tab-wrapper a.nav-tab-active,
+.nfb-tabs-nav li a:hover,
+.nav-tab-wrapper a.nav-tab:hover {
+    color: #2271b1;
+    border-bottom-color: #2271b1;
+    background: #fff;
+}
+
+.nfb-tabs-content,
+.nfb-entries-tabs-wrapper .nfb-tab-pane {
+    padding: 20px;
+    background: #fff;
+    border-top: 1px solid #c3c4c7;
+}
+
+.nfb-tab-pane {
+    display: none;
+}
+
+.nfb-tab-pane.active {
+    display: block;
+}
+
+/* --- Entries Page & Reports --- */
+.nfb-entries-filter {
+    margin-bottom: 20px;
+    padding: 15px;
+    background-color: #fff;
+    border: 1px solid #c3c4c7;
+}
+
+.nfb-entries-filter select {
+    margin-left: 10px;
+}
+
+.nfb-reports-container {
+    padding: 15px;
+}
+
+.nfb-reports-controls {
+    margin-bottom: 25px;
+}
+
+.nfb-chart-wrapper {
+    position: relative;
+    height: 400px;
+    display: none;
+}
+
+.nfb-chart-wrapper.loading::after {
+    content: 'در حال بارگذاری...';
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    font-size: 1.2em;
+    color: #555;
+}
+
+/* --- Field Builder Styles --- */
+#nfb_form_builder_mb .inside {
+    margin: 0;
+    padding: 0;
+}
+
+#nfb-field-builder-wrapper {
+    padding: 15px;
+    background-color: #fff;
+}
+
+.nfb-field-row {
+    margin-bottom: 10px;
+    background: #f9f9f9;
+    border: 1px solid #c3c4c7;
+    border-radius: 4px;
+}
+
+.nfb-field-header {
+    display: flex;
+    align-items: center;
+    padding: 10px;
+    gap: 10px;
+    cursor: pointer;
+}
+
+.nfb-field-header .handle {
+    cursor: move;
+    color: #787c82;
+}
+
+.nfb-field-header strong {
+    flex-grow: 1;
+}
+
+.nfb-field-header .nfb-field-actions {
+    margin-left: auto;
+    display: flex;
+    gap: 5px;
+}
+
+.nfb-field-header .nfb-field-actions a {
+    text-decoration: none;
+    color: #50575e;
+}
+
+.nfb-field-header .nfb-field-actions a:hover {
+    color: #2271b1;
+}
+
+.nfb-field-header .nfb-remove-field span {
+    color: #d63638;
+}
+
+.nfb-field-details {
+    padding: 15px;
+    border-top: 1px solid #ddd;
+    background: #fff;
+}
+
+.nfb-field-inputs {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 10px;
+    margin-bottom: 15px;
+}
+
+.nfb-field-inputs input[type="text"] {
+    flex-grow: 1;
+}
+
+.nfb-field-inputs select {
+    flex-basis: 180px;
+}
+
+.nfb-field-options {
+    width: 100%;
+    min-height: 80px;
+    font-family: monospace;
+}
+
+.nfb-field-rules {
+    padding-top: 15px;
+    margin-top: 15px;
+    border-top: 1px dashed #ddd;
+    display: flex;
+    flex-wrap: wrap;
+    gap: 20px;
+    align-items: center;
+}
+
+.nfb-field-key-error {
+    border-color: red !important;
+}
+
+/* Placeholder for sortable */
+.nfb-field-placeholder {
+    border: 2px dashed #c3c4c7;
+    background-color: #f0f0f1;
+    height: 50px;
+    margin-bottom: 10px;
+}
