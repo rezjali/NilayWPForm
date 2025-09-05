@@ -1,0 +1,234 @@
+/**
+ * Nilay Form Builder Admin CSS
+ *
+ * @package    Nilay_Form_Builder
+ * @subpackage Assets/CSS
+ * @author     Reza Jalali
+ * @since      1.0.0
+ */
+
+/* ------------- Form Builder UI ------------- */
+
+#nfb-form-builder-wrapper {
+    display: flex;
+    margin-top: 20px;
+    border: 1px solid #ccd0d4;
+    background-color: #f6f7f7;
+}
+
+/* ستون انواع فیلدها */
+#nfb-field-types-container {
+    width: 240px;
+    padding: 15px;
+    border-left: 1px solid #ccd0d4;
+    background-color: #fff;
+}
+
+#nfb-field-types-container h3 {
+    margin: 0 0 10px;
+    padding: 0 0 10px;
+    border-bottom: 1px solid #eee;
+    font-size: 14px;
+}
+
+#nfb-field-types {
+    margin: 0;
+    padding: 0;
+    list-style: none;
+}
+
+#nfb-field-types li {
+    margin-bottom: 5px;
+}
+
+.nfb-add-field-btn {
+    width: 100%;
+    text-align: right;
+    display: flex;
+    align-items: center;
+}
+
+.nfb-add-field-btn .dashicons {
+    margin-left: 8px;
+    font-size: 18px;
+}
+
+/* پنل اصلی فرم ساز */
+#nfb-form-builder-main {
+    flex: 1;
+    padding: 15px;
+    min-height: 400px;
+}
+
+#nfb-form-fields-list {
+    background-color: #fff;
+    border: 1px dashed #ccd0d4;
+    min-height: 380px;
+    padding: 10px;
+    border-radius: 4px;
+    position: relative;
+}
+
+/* پیام فرم ساز خالی */
+#nfb-form-fields-list.empty {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.nfb-empty-message {
+    color: #777;
+    font-size: 16px;
+    text-align: center;
+}
+
+/* آیتم های هر فیلد در فرم ساز */
+.nfb-field-item {
+    background-color: #fdfdfd;
+    border: 1px solid #ccd0d4;
+    margin-bottom: 10px;
+    border-radius: 4px;
+    cursor: move;
+}
+
+.nfb-field-item.ui-sortable-helper {
+    box-shadow: 0 5px 15px rgba(0, 0, 0, 0.1);
+    transform: rotate(2deg);
+}
+
+.nfb-field-item .nfb-field-header {
+    display: flex;
+    align-items: center;
+    padding: 10px 15px;
+    background-color: #fff;
+    border-bottom: 1px solid #eee;
+}
+
+.nfb-field-item.settings-open .nfb-field-header {
+    border-bottom-color: #ccd0d4;
+}
+
+.nfb-field-header .nfb-field-icon {
+    font-size: 20px;
+    margin-left: 10px;
+    color: #555;
+}
+
+.nfb-field-header .nfb-field-label {
+    font-weight: 600;
+    color: #2c3338;
+    flex: 1;
+}
+
+.nfb-field-type-badge {
+    background-color: #e0e0e0;
+    color: #555;
+    font-size: 11px;
+    padding: 2px 6px;
+    border-radius: 3px;
+    margin-right: 15px;
+}
+
+.nfb-field-actions button {
+    background: none;
+    border: none;
+    cursor: pointer;
+    color: #787c82;
+    padding: 5px;
+}
+
+.nfb-field-actions button:hover {
+    color: #2271b1;
+}
+
+.nfb-field-actions .nfb-toggle-settings .dashicons {
+    transition: transform 0.2s ease-in-out;
+}
+
+.nfb-field-item.settings-open .nfb-toggle-settings .dashicons {
+    transform: rotate(180deg);
+}
+
+
+/* بخش تنظیمات فیلدها */
+.nfb-field-settings {
+    display: none;
+    padding: 15px;
+    background-color: #f6f7f7;
+    border-top: 1px solid #ccd0d4;
+}
+
+.nfb-setting-row {
+    margin-bottom: 12px;
+}
+
+.nfb-setting-row label {
+    display: block;
+    margin-bottom: 5px;
+    font-weight: 600;
+}
+
+.nfb-setting-row input[type="text"],
+.nfb-setting-row textarea {
+    width: 100%;
+    max-width: 100%;
+}
+
+.nfb-setting-row input[type="checkbox"] {
+    margin-left: 5px;
+}
+
+/* استایل برای placeholder در حالت drag */
+.nfb-sortable-placeholder {
+    border: 2px dashed #a0a5aa;
+    background: #f0f0f1;
+    height: 50px;
+    margin-bottom: 10px;
+    border-radius: 4px;
+}
+
+.ui-sortable-placeholder {
+    border: 1px dashed #ccc;
+    background: #f7f7f7;
+    height: 60px;
+    margin-bottom: 10px;
+}
+
+/* --- استایل های جدید برای منطق شرطی --- */
+.nfb-conditional-logic-wrapper h4 {
+    margin-top: 20px;
+    margin-bottom: 10px;
+}
+
+.nfb-conditional-rule {
+    background: #fdfdfd;
+    border: 1px solid #ddd;
+    padding: 15px;
+    margin-bottom: 10px;
+    border-radius: 4px;
+    display: flex;
+    align-items: center;
+    gap: 10px;
+    flex-wrap: wrap;
+}
+
+.nfb-conditional-rule .condition-group,
+.nfb-conditional-rule .action-group {
+    display: flex;
+    align-items: center;
+    gap: 5px;
+}
+
+.nfb-conditional-rule select,
+.nfb-conditional-rule input[type="text"] {
+    min-width: 150px;
+}
+
+.nfb-remove-rule-btn {
+    color: #a00;
+    cursor: pointer;
+    text-decoration: none;
+    font-size: 18px;
+    margin-right: auto;
+    /* دکمه حذف را به انتهای فلکس باکس می برد */
+}

@@ -1,0 +1,160 @@
+/**
+ * Nilay Form Builder Frontend CSS
+ *
+ * @package    Nilay_Form_Builder
+ * @subpackage Assets/CSS
+ * @author     Reza Jalali
+ * @since      1.0.0
+ */
+
+.nfb-form-wrapper {
+    max-width: 600px;
+    margin: 20px 0;
+    font-family: sans-serif;
+}
+
+.nfb-field-group {
+    margin-bottom: 15px;
+}
+
+.nfb-field-group label {
+    display: block;
+    font-weight: bold;
+    margin-bottom: 5px;
+    font-size: 14px;
+}
+
+.nfb-field-group label .nfb-required {
+    color: #ff0000;
+    margin-right: 3px;
+}
+
+.nfb-field-group input[type="text"],
+.nfb-field-group input[type="email"],
+.nfb-field-group input[type="number"],
+.nfb-field-group textarea,
+.nfb-field-group select {
+    width: 100%;
+    padding: 10px;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+    font-size: 14px;
+    box-sizing: border-box;
+    /* Ensures padding doesn't affect width */
+}
+
+.nfb-field-group textarea {
+    min-height: 120px;
+}
+
+.nfb-radio-group label,
+.nfb-checkbox-group label {
+    display: block;
+    margin-bottom: 8px;
+    font-weight: normal;
+}
+
+.nfb-radio-group input,
+.nfb-checkbox-group input {
+    margin-left: 5px;
+    margin-right: 5px;
+}
+
+.nfb-submit-btn {
+    background-color: #2271b1;
+    color: #fff;
+    border: none;
+    padding: 12px 25px;
+    font-size: 16px;
+    border-radius: 4px;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+}
+
+.nfb-submit-btn:hover {
+    background-color: #1e639b;
+}
+
+/* --- استایل های جدید برای فرم چندمرحله ای --- */
+
+.nfb-page {
+    display: none;
+    /* صفحات به طور پیش فرض مخفی هستند */
+}
+
+.nfb-form-wrapper.nfb-multi-step-form .nfb-page:first-child {
+    display: block;
+    /* نمایش صفحه اول */
+}
+
+.nfb-step-indicator {
+    text-align: center;
+    margin-bottom: 20px;
+    font-weight: bold;
+    color: #555;
+    background-color: #f0f0f1;
+    padding: 8px;
+    border-radius: 4px;
+}
+
+.nfb-nav-buttons {
+    display: flex;
+    justify-content: space-between;
+    margin-top: 20px;
+}
+
+.nfb-nav-buttons button {
+    padding: 10px 20px;
+    border: none;
+    border-radius: 4px;
+    cursor: pointer;
+    font-size: 14px;
+}
+
+.nfb-prev-btn {
+    background-color: #6c757d;
+    color: white;
+}
+
+.nfb-next-btn {
+    background-color: #007bff;
+    color: white;
+}
+
+/* --- استایل های جدید برای فیلد امضا --- */
+
+.nfb-signature-wrapper {
+    position: relative;
+    width: 100%;
+    height: 200px;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+    background-color: #f8f8f8;
+    touch-action: none;
+    /* برای بهبود عملکرد در موبایل */
+}
+
+.nfb-signature-pad {
+    display: block;
+    width: 100%;
+    height: 100%;
+}
+
+.nfb-signature-clear {
+    position: absolute;
+    top: 8px;
+    left: 8px;
+    /* برای سازگاری با RTL */
+    font-size: 12px;
+    padding: 4px 10px;
+    cursor: pointer;
+    background-color: #fff;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+    user-select: none;
+    transition: background-color 0.2s;
+}
+
+.nfb-signature-clear:hover {
+    background-color: #e9e9e9;
+}
