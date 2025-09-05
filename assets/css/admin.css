@@ -1,0 +1,230 @@
+/**
+ * Nilay Form Builder - Admin Stylesheet
+ * Version: 1.0.0
+ */
+
+/* --- Settings Metabox Tabs --- */
+.nfb-settings-tabs-wrapper {
+    margin: -12px -12px 0;
+}
+
+.nfb-tabs-nav {
+    display: flex;
+    border-bottom: 1px solid #ddd;
+    background-color: #f6f7f7;
+    margin: 0;
+    padding: 0 10px;
+}
+
+.nfb-tabs-nav li {
+    margin: 0;
+    padding: 0;
+    list-style: none;
+}
+
+.nfb-tabs-nav a {
+    display: block;
+    padding: 10px 15px;
+    text-decoration: none;
+    color: #555;
+    border-bottom: 3px solid transparent;
+    margin-bottom: -1px;
+    font-weight: 600;
+}
+
+.nfb-tabs-nav li.active a,
+.nfb-tabs-nav a:hover {
+    color: #0073aa;
+    border-bottom-color: #0073aa;
+}
+
+.nfb-tabs-content {
+    padding: 20px;
+    background: #fff;
+}
+
+.nfb-tab-pane {
+    display: none;
+}
+
+.nfb-tab-pane.active {
+    display: block;
+}
+
+/* --- General Admin Styles --- */
+.nfb-form-selector {
+    margin-bottom: 20px;
+}
+.nfb-form-selector select {
+    margin-left: 10px;
+}
+
+.nfb-entry-details-box .inside {
+    padding: 0;
+}
+
+.nfb-entry-details-table {
+    width: 100%;
+}
+.nfb-entry-details-table th,
+.nfb-entry-details-table td {
+    padding: 12px;
+    border-bottom: 1px solid #eee;
+    vertical-align: top;
+}
+.nfb-entry-details-table th {
+    width: 25%;
+    font-weight: bold;
+    background-color: #f9f9f9;
+}
+
+/* --- Field Builder Styles --- */
+#nfb_field_builder_mb .inside {
+    margin: 0;
+    padding: 0;
+}
+
+.nfb-field-builder-actions {
+    padding: 15px;
+    background: #fdfdfd;
+    border-bottom: 1px solid #ddd;
+}
+
+#nfb-field-builder-wrapper {
+    padding: 15px;
+}
+
+.nfb-field-row {
+    margin-bottom: 10px;
+    background: #f9f9f9;
+    border: 1px solid #ddd;
+    border-radius: 4px;
+}
+
+.nfb-field-header {
+    display: flex;
+    align-items: center;
+    padding: 10px;
+    gap: 10px;
+    cursor: pointer;
+}
+
+.nfb-field-header .handle {
+    cursor: move;
+    color: #888;
+}
+
+.nfb-field-header .nfb-toggle-field-details,
+.nfb-field-header .nfb-copy-field {
+    margin-left: auto;
+    text-decoration: none;
+}
+
+.nfb-field-header .nfb-copy-field {
+    margin-left: 10px;
+}
+
+.nfb-field-details {
+    padding: 15px;
+    border-top: 1px solid #ddd;
+    background: #fff;
+}
+
+.nfb-field-inputs {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 10px;
+    margin-bottom: 15px;
+}
+
+.nfb-field-inputs input,
+.nfb-field-inputs select,
+.nfb-field-inputs textarea {
+    margin: 0;
+}
+.nfb-field-inputs input[type="text"] {
+    flex: 1 1 180px;
+}
+.nfb-field-inputs select {
+     flex: 1 1 150px;
+}
+
+.nfb-field-options {
+    width: 100%;
+    height: 60px;
+}
+
+.nfb-repeater-fields-wrapper {
+    padding: 10px;
+    margin-top: 10px;
+    border: 1px dashed #ccc;
+    background: #fff;
+}
+
+.nfb-repeater-sub-fields .nfb-field-row {
+    border-style: dashed;
+}
+
+.nfb-field-key-error {
+    border-color: red !important;
+}
+
+.nfb-field-rules,
+.nfb-field-settings-panel {
+    padding: 10px;
+    margin-top: 10px;
+    border: 1px solid #e0e0e0;
+    background: #fdfdfd;
+}
+.nfb-field-rules h4,
+.nfb-field-settings-panel h4 {
+    margin: 0 0 10px;
+    font-size: 1em;
+    padding-bottom: 5px;
+    border-bottom: 1px solid #eee;
+}
+
+.nfb-conditional-rules {
+    padding-top: 10px;
+    margin-top: 10px;
+    border-top: 1px dashed #ccc;
+}
+
+.nfb-conditional-rules select,
+.nfb-conditional-rules input {
+    vertical-align: middle;
+}
+
+.nfb-compound-sub-field-setting {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin-bottom: 5px;
+    padding: 5px 0;
+    border-bottom: 1px dotted #eee;
+}
+.nfb-compound-sub-field-setting:last-child {
+    border-bottom: none;
+}
+
+.nfb-image-option-row {
+    display: flex;
+    align-items: center;
+    gap: 10px;
+    margin-bottom: 5px;
+    padding: 5px;
+    background: #fff;
+    border: 1px solid #eee;
+}
+
+.nfb-image-option-preview {
+    max-width: 40px;
+    max-height: 40px;
+    border: 1px solid #ddd;
+    background: #eee;
+}
+
+.nfb-remove-image-option {
+    color: #a00;
+    text-decoration: none;
+}

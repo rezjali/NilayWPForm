@@ -1,0 +1,194 @@
+/**
+ * Nilay Form Builder - Frontend Stylesheet
+ * Version: 1.0.0
+ * This file styles the forms for the end-user.
+ */
+
+/* --- Base Form Styles & Variables --- */
+:root {
+    --nfb-primary-color: #0073e6;
+    --nfb-primary-hover-color: #005bb5;
+    --nfb-text-color: #333;
+    --nfb-border-color: #dce1e6;
+    --nfb-bg-color: #ffffff;
+    --nfb-border-radius: 8px;
+    --nfb-button-border-radius: 5px;
+    --nfb-font-family: inherit;
+    /* Inherit from theme */
+
+    --nfb-alert-success-bg: #e6f7ed;
+    --nfb-alert-success-text: #1d643b;
+    --nfb-alert-error-bg: #fdecea;
+    --nfb-alert-error-text: #a94442;
+}
+
+.nfb-form-container {
+    direction: rtl;
+    text-align: right;
+    font-family: var(--nfb-font-family);
+    color: var(--nfb-text-color);
+    background-color: var(--nfb-bg-color);
+    padding: 30px;
+    border: 1px solid var(--nfb-border-color);
+    border-radius: var(--nfb-border-radius);
+    max-width: 700px;
+    margin: 20px auto;
+    box-sizing: border-box;
+}
+
+/* --- Form Fields --- */
+.nfb-form-fields-wrapper {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 25px;
+}
+
+.nfb-form-group {
+    margin-bottom: 0;
+    flex-grow: 1;
+    width: 100%;
+}
+
+.nfb-form-group label {
+    display: block;
+    font-weight: 600;
+    margin-bottom: 8px;
+    font-size: 0.95em;
+}
+
+.nfb-form-group input[type="text"],
+.nfb-form-group input[type="email"],
+.nfb-form-group input[type="number"],
+.nfb-form-group input[type="url"],
+.nfb-form-group select,
+.nfb-form-group textarea {
+    width: 100%;
+    padding: 12px 15px;
+    border: 1px solid var(--nfb-border-color);
+    border-radius: var(--nfb-button-border-radius);
+    box-sizing: border-box;
+    background-color: #fdfdfd;
+    color: var(--nfb-text-color);
+    transition: border-color 0.3s, box-shadow 0.3s;
+}
+
+.nfb-form-group input:focus,
+.nfb-form-group select:focus,
+.nfb-form-group textarea:focus {
+    border-color: var(--nfb-primary-color);
+    box-shadow: 0 0 0 2px rgba(0, 115, 230, 0.2);
+    outline: none;
+}
+
+.nfb-required {
+    color: #d9534f;
+    font-weight: bold;
+    margin-right: 2px;
+}
+
+.nfb-help-text {
+    font-size: 0.85em;
+    color: #666;
+    margin-top: 5px;
+}
+
+/* --- Submit Button --- */
+.nfb-form-footer {
+    margin-top: 30px;
+    text-align: left;
+}
+
+.nfb-submit-button {
+    display: inline-block;
+    padding: 12px 25px;
+    font-size: 1em;
+    font-weight: 600;
+    color: #ffffff;
+    background-color: var(--nfb-primary-color);
+    border: none;
+    border-radius: var(--nfb-button-border-radius);
+    cursor: pointer;
+    text-decoration: none;
+    transition: background-color 0.3s ease, transform 0.2s ease;
+}
+
+.nfb-submit-button:hover {
+    background-color: var(--nfb-primary-hover-color);
+    transform: translateY(-2px);
+}
+
+
+/* --- Alerts & Notices --- */
+.nfb-alert {
+    padding: 15px 20px;
+    margin-bottom: 20px;
+    border: 1px solid transparent;
+    border-radius: var(--nfb-border-radius);
+}
+
+.nfb-alert-success {
+    color: var(--nfb-alert-success-text);
+    background-color: var(--nfb-alert-success-bg);
+    border-color: #c3e6cb;
+}
+
+.nfb-alert-error {
+    color: var(--nfb-alert-error-text);
+    background-color: var(--nfb-alert-error-bg);
+    border-color: #f5c6cb;
+}
+
+.nfb-alert-error ul {
+    margin: 0;
+    padding-right: 20px;
+}
+
+/* --- Multi-Step Form --- */
+.nfb-step {
+    display: none;
+}
+
+.nfb-step.active {
+    display: block;
+}
+
+.nfb-step-nav {
+    margin-top: 25px;
+    display: flex;
+    justify-content: space-between;
+}
+
+.nfb-step-nav button {
+    padding: 10px 20px;
+}
+
+.nfb-prev-step {
+    background-color: #6c757d;
+}
+
+.nfb-prev-step:hover {
+    background-color: #5a6268;
+}
+
+/* --- Signature Field --- */
+.nfb-signature-pad-wrapper {
+    position: relative;
+    border: 1px solid var(--nfb-border-color);
+    border-radius: var(--nfb-button-border-radius);
+    background: #fdfdfd;
+}
+
+.nfb-signature-pad {
+    width: 100%;
+    height: 200px;
+    cursor: crosshair;
+}
+
+.nfb-signature-clear {
+    position: absolute;
+    top: 5px;
+    left: 5px;
+    font-size: 0.8em;
+    text-decoration: none;
+    color: #a00;
+}
