@@ -1,0 +1,221 @@
+/**
+ * Nilay Form Builder Admin CSS - Advanced Version
+ * @version 2.1.0
+ */
+
+#nfb-form-builder-wrapper {
+    display: flex;
+    margin-top: 20px;
+    border: 1px solid #ccd0d4;
+    background-color: #f6f7f7;
+}
+
+#nfb-field-types-container {
+    width: 240px;
+    padding: 15px;
+    border-left: 1px solid #ccd0d4;
+    background-color: #fff;
+}
+
+#nfb-field-types-container h3 {
+    margin: 15px 0 10px;
+    padding: 0 0 10px;
+    border-bottom: 1px solid #eee;
+    font-size: 14px;
+}
+
+#nfb-field-types-container h3:first-child {
+    margin-top: 0;
+}
+
+#nfb-field-types {
+    margin: 0;
+    padding: 0;
+    list-style: none;
+}
+
+#nfb-field-types li {
+    margin-bottom: 5px;
+}
+
+.nfb-add-field-btn {
+    width: 100%;
+    text-align: right;
+    display: flex;
+    align-items: center;
+}
+
+.nfb-add-field-btn .dashicons {
+    margin-left: 8px;
+    font-size: 18px;
+}
+
+#nfb-form-builder-main {
+    flex: 1;
+    padding: 15px;
+    min-height: 400px;
+}
+
+#nfb-form-fields-list {
+    background-color: #fff;
+    border: 1px dashed #ccd0d4;
+    min-height: 380px;
+    padding: 10px;
+    border-radius: 4px;
+    position: relative;
+}
+
+#nfb-form-fields-list.empty {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.nfb-empty-message {
+    color: #777;
+    font-size: 16px;
+    text-align: center;
+}
+
+/* Field Row (Card) Styles */
+.nfb-field-row {
+    margin-bottom: 10px;
+    background: #f9f9f9;
+    border: 1px solid #ddd;
+    border-radius: 4px;
+}
+
+.nfb-field-header {
+    display: flex;
+    align-items: center;
+    padding: 10px;
+    gap: 10px;
+    cursor: move;
+}
+
+.nfb-field-header .handle {
+    color: #888;
+}
+
+.nfb-field-header strong {
+    flex-grow: 1;
+}
+
+.nfb-field-header .nfb-field-type-display {
+    color: #666;
+    font-size: 0.9em;
+}
+
+.nfb-field-header a {
+    margin-left: 5px;
+    text-decoration: none;
+    color: #555;
+}
+
+.nfb-field-header a.nfb-toggle-field-details {
+    margin-left: auto;
+}
+
+.nfb-quick-remove-field .dashicons {
+    color: #a00 !important;
+}
+
+/* Field Details & Settings Panel */
+.nfb-field-details {
+    padding: 0 15px 15px;
+    border-top: 1px solid #ddd;
+    background: #fff;
+}
+
+.nfb-settings-tabs {
+    border-bottom: 1px solid #ccc;
+    margin: 10px 0;
+    padding-bottom: 0;
+}
+
+.nfb-settings-tabs .nfb-tab-link {
+    display: inline-block;
+    padding: 8px 12px;
+    text-decoration: none;
+    border: 1px solid transparent;
+    border-bottom: none;
+    margin-bottom: -1px;
+    background: #eee;
+}
+
+.nfb-settings-tabs .nfb-tab-link.active {
+    background: #fff;
+    border-color: #ccc;
+    border-bottom-color: #fff;
+}
+
+.nfb-settings-panel {
+    display: none;
+    padding: 10px;
+    border: 1px solid #ccc;
+    border-top: none;
+}
+
+.nfb-settings-panel.active {
+    display: block;
+}
+
+.nfb-settings-panel p {
+    margin: 0 0 10px;
+}
+
+.nfb-settings-panel label {
+    display: block;
+    margin-bottom: 5px;
+    font-weight: 600;
+}
+
+.nfb-settings-panel input[type="text"],
+.nfb-settings-panel select,
+.nfb-settings-panel textarea {
+    width: 100%;
+    max-width: 100%;
+}
+
+.nfb-remove-field {
+    float: left;
+    margin-top: 15px;
+    color: #a00;
+    border-color: #a00 !important;
+}
+
+.nfb-remove-field:hover {
+    background: #a00 !important;
+    color: #fff;
+}
+
+/* Repeater Styles */
+.nfb-repeater-wrapper {
+    padding: 10px;
+    margin-top: 10px;
+    border: 1px dashed #ccc;
+    background: #fafafa;
+}
+
+.nfb-repeater-sub-fields .nfb-field-row {
+    border-style: dashed;
+}
+
+.nfb-field-key-error {
+    border-color: red !important;
+}
+
+.nfb-conditional-rules {
+    padding-top: 10px;
+    margin-top: 10px;
+    border-top: 1px dashed #ccc;
+}
+
+/* Sortable Placeholder */
+.nfb-sortable-placeholder {
+    border: 2px dashed #a0a5aa;
+    background: #f0f0f1;
+    height: 50px;
+    margin-bottom: 10px;
+    border-radius: 4px;
+}

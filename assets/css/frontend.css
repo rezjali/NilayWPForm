@@ -1,0 +1,238 @@
+/**
+ * Nilay Form Builder Frontend CSS - Advanced Version
+ * @version 2.1.0
+ */
+
+/* Base Styles */
+.nfb-form-wrapper {
+    max-width: 800px;
+    margin: 20px auto;
+    font-family: sans-serif;
+}
+
+.nfb-form {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 20px;
+}
+
+.nfb-field-group {
+    margin-bottom: 0;
+    flex-grow: 1;
+    display: flex;
+    flex-direction: column;
+}
+
+.nfb-field-group label {
+    display: block;
+    font-weight: bold;
+    margin-bottom: 8px;
+    font-size: 14px;
+}
+
+.nfb-required {
+    color: #ff0000;
+}
+
+.nfb-help-text {
+    font-size: 0.85em;
+    color: #666;
+    margin-top: 5px;
+}
+
+/* Field Widths */
+.nfb-field-width-full {
+    width: 100%;
+}
+
+.nfb-field-width-half {
+    width: calc(50% - 10px);
+}
+
+.nfb-field-width-third {
+    width: calc(33.333% - 14px);
+}
+
+.nfb-field-width-quarter {
+    width: calc(25% - 15px);
+}
+
+@media (max-width: 768px) {
+
+    .nfb-field-width-half,
+    .nfb-field-width-third,
+    .nfb-field-width-quarter {
+        width: 100%;
+    }
+}
+
+/* Input Styles */
+.nfb-field-group input[type="text"],
+.nfb-field-group input[type="email"],
+.nfb-field-group input[type="number"],
+.nfb-field-group input[type="url"],
+.nfb-field-group input[type="date"],
+.nfb-field-group input[type="time"],
+.nfb-field-group textarea,
+.nfb-field-group select {
+    width: 100%;
+    padding: 12px;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+    font-size: 14px;
+    box-sizing: border-box;
+}
+
+.nfb-field-group textarea {
+    min-height: 120px;
+}
+
+/* Multi-step Form */
+.nfb-pages {
+    width: 100%;
+    display: flex;
+    flex-wrap: wrap;
+    gap: 20px;
+}
+
+.nfb-page {
+    display: none;
+    width: 100%;
+    flex-wrap: wrap;
+    gap: 20px;
+}
+
+.nfb-page.active {
+    display: flex;
+}
+
+.nfb-nav-buttons {
+    width: 100%;
+    display: flex;
+    justify-content: space-between;
+    margin-top: 20px;
+}
+
+.nfb-nav-buttons button {
+    padding: 10px 20px;
+    border: none;
+    border-radius: 4px;
+    cursor: pointer;
+    font-size: 14px;
+}
+
+.nfb-prev-btn {
+    background-color: #6c757d;
+    color: white;
+}
+
+.nfb-submit-btn,
+.nfb-next-btn {
+    background-color: #007bff;
+    color: white;
+}
+
+/* Advanced Field Styles */
+/* Signature */
+.nfb-signature-wrapper {
+    position: relative;
+    width: 100%;
+    height: 200px;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+    background-color: #f8f8f8;
+    touch-action: none;
+}
+
+.nfb-signature-pad {
+    display: block;
+    width: 100%;
+    height: 100%;
+}
+
+.nfb-signature-clear {
+    position: absolute;
+    top: 8px;
+    left: 8px;
+    font-size: 12px;
+    padding: 4px 10px;
+    cursor: pointer;
+    background-color: #fff;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+}
+
+/* Gallery */
+.nfb-gallery-preview {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 10px;
+    margin-top: 10px;
+}
+
+.nfb-gallery-preview .image-container {
+    position: relative;
+}
+
+.nfb-gallery-preview img {
+    width: 80px;
+    height: 80px;
+    object-fit: cover;
+    border: 1px solid #ddd;
+    border-radius: 4px;
+}
+
+.nfb-gallery-preview .remove-image {
+    position: absolute;
+    top: -5px;
+    right: -5px;
+    background: red;
+    color: white;
+    border-radius: 50%;
+    cursor: pointer;
+    width: 20px;
+    height: 20px;
+    text-align: center;
+    line-height: 20px;
+    font-size: 14px;
+}
+
+/* Map */
+.nfb-map-preview {
+    border-radius: 4px;
+}
+
+/* Repeater */
+.nfb-repeater-rows-container .nfb-repeater-row {
+    border: 1px solid #ddd;
+    padding: 15px;
+    margin-bottom: 10px;
+    border-radius: 4px;
+    background: #fafafa;
+}
+
+.nfb-repeater-row-actions {
+    margin-top: 10px;
+    text-align: left;
+}
+
+/* Response Messages */
+.nfb-response-message {
+    width: 100%;
+    padding: 15px;
+    margin-top: 20px;
+    border-radius: 4px;
+    display: none;
+}
+
+.nfb-response-message.success {
+    background-color: #d4edda;
+    color: #155724;
+    border: 1px solid #c3e6cb;
+}
+
+.nfb-response-message.error {
+    background-color: #f8d7da;
+    color: #721c24;
+    border: 1px solid #f5c6cb;
+}
